@@ -1,0 +1,34 @@
+# Recommended GNOME Shell extensions
+#
+# These aren't (reliably) scriptable to install from the CLI across GNOME
+# versions, so install them manually — either:
+#   - the "Extension Manager" app (installed by 06-gnome-setup.sh), or
+#   - https://extensions.gnome.org in Firefox with the browser connector.
+#
+# Name                     Purpose
+# ------------------------ ---------------------------------------------
+# Dash to Dock              macOS-style dock, autohide, icon size (settings
+#                            for this are pre-applied by 06-gnome-setup.sh)
+# AppIndicator Support      tray icons for apps that need them (Burp, VPNs)
+# Clipboard Indicator       clipboard history in the top bar
+# Vitals                    CPU/RAM/temp/network in the top bar — handy
+#                            while a scan or a fuzzer is running
+# Blur my Shell             cosmetic, blurs the top bar / overview
+# Just Perfection           fine-grained control over GNOME UI elements
+# Caffeine                  quick toggle to stop the screen from locking
+#                            mid-scan or mid-CTF
+# Removable Drive Menu      quick eject/mount for USB drives (Kali live USBs,
+#                            forensics images, etc.)
+# ArcMenu                   full start-menu-style app launcher, replaces the
+#                            default Activities button — install this one
+#                            via Extension Manager specifically, NOT by
+#                            hand-copying a downloaded zip into
+#                            ~/.local/share/gnome-shell/extensions/: a
+#                            manually-copied extension doesn't get enabled
+#                            automatically, and GNOME Shell won't reliably
+#                            pick it up without a restart either way — the
+#                            Extension Manager handles both steps for you.
+#
+# GSConnect is NOT listed here — it's installed via apt in 06-gnome-setup.sh
+# since it has an official Kali/Debian package. It still needs to be turned
+# on manually via Extension Manager and paired with your phone afterward.

@@ -1,0 +1,29 @@
+# NOTE: Before symlinking, replace the two placeholders below with your own
+# name and email, or just run:
+#   git config --global user.name  "Your Name"
+#   git config --global user.email "you@example.com"
+# after linking — that writes straight into this file too.
+
+[user]
+    name  = REPLACE_WITH_YOUR_NAME
+    email = REPLACE_WITH_YOUR_EMAIL
+
+[init]
+    defaultBranch = main
+
+[core]
+    editor = vim
+    autocrlf = input
+
+[color]
+    ui = auto
+
+[pull]
+    rebase = false
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate --all

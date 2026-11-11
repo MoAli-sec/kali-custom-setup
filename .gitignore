@@ -1,0 +1,22 @@
+# install logs (created at runtime by install.sh)
+logs/
+
+# local backups (these live under $HOME normally, but ignore them here too
+# in case HOME ever points inside the repo by mistake)
+.kali-custom-setup-backups/
+
+# personal/secret config that should never be committed
+**/.env
+**/*.local.zsh
+dotfiles/git/.gitconfig.local
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*.swo
+__pycache__/
+*.pyc
+
+# python venvs if ever created inside the repo
+.venv/
+venv/
